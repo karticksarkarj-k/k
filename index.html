@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kartick Sarkar</title>
+    <link rel="icon" type="image/x-icon" href="/icon.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        :root {
+            --bg: #f4f2ee;
+            --card-white: #ffffff;
+            --text-dark: #1d1d1d;
+            --text-grey: #666666;
+            --border: #e0e0e0;
+            
+            /* Official Brand Colors */
+            --facebook: #1877F2;
+            --youtube: #FF0000;
+            --pinterest: #BD081C;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text-dark);
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 580px;
+        }
+
+        .profile-card {
+            background: var(--card-white);
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+
+        .banner-wrap {
+            height: 180px;
+            width: 100%;
+            background: #cbd5e1;
+            overflow: hidden;
+        }
+
+        .banner-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .content-padding {
+            padding: 0 24px 24px 24px;
+        }
+
+        .avatar-container {
+            margin-top: -90px;
+            margin-bottom: 12px;
+        }
+
+        .avatar-circle {
+            width: 160px;
+            height: 160px;
+            background: #fff;
+            border-radius: 50%;
+            padding: 4px;
+            border: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .avatar-circle img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #000;
+        }
+
+        .bio {
+            font-size: 1.05rem;
+            color: var(--text-grey);
+            margin-top: 4px;
+            margin-bottom: 24px;
+            line-height: 1.5;
+        }
+
+        /* Consistent Link Styling */
+        .links-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .link-row {
+            display: flex;
+            align-items: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            color: white;
+            border-radius: 12px;
+            transition: 0.3s ease-in-out;
+        }
+
+        .link-row:hover {
+            transform: scale(1.02);
+            filter: brightness(1.1);
+        }
+
+        .link-icon {
+            margin-right: 18px;
+            width: 24px;
+            font-size: 1.4rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Native Theme Colors */
+        .fb-link { background-color: var(--facebook); }
+        .yt-link { background-color: var(--youtube); }
+        .tk-link { background-color: #000000; }
+        .ig-link { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); }
+        .x-link { background-color: #000000; }
+        .pn-link { background-color: var(--pinterest); }
+        .th-link { background-color: #000000; }
+
+        .link-row b {
+            font-size: 1.05rem;
+            font-weight: 600;
+        }
+
+        .footer-copyright {
+            margin-top: 24px;
+            padding-top: 15px;
+            border-top: 1px solid #f0f0f0;
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--text-grey);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="profile-card">
+            <div class="banner-wrap">
+                <img src="https://scontent.fdac138-2.fna.fbcdn.net/v/t39.30808-6/605719318_4163480503797250_2373615960285075044_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=2a1932&_nc_eui2=AeG2FUATSZ_4iquRN0_k5UMhhSKjw0SP3GSFIqPDRI_cZO36nfjS0urt76XHqegJEq-hOetBUcngpNZ08MnkW90B&_nc_ohc=6xnTn-dMUJ4Q7kNvwGU_ids&_nc_oc=Adp4_mhuh4MXvQ4NQHGfB_i85s5Yr1wqjzf42H_4JRj0qKGB2b3yY2F0kbgAYi34xOY&_nc_zt=23&_nc_ht=scontent.fdac138-2.fna&_nc_gid=vQLCur_oTnU9JoUjGZ_wFQ&_nc_ss=7a3a8&oh=00_Af0v0O3x1lPZ45wBu8NZRYLun2XCOcQaHpTNHUAGu4Tr0w&oe=69DDC8CC" alt="Banner">
+            </div>
+            
+            <div class="content-padding">
+                <div class="avatar-container">
+                    <div class="avatar-circle">
+                        <img src="https://scontent.fdac138-1.fna.fbcdn.net/v/t39.30808-6/583124744_4110907759054525_5867639771751308308_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=1d70fc&_nc_eui2=AeFmcTJ4Vp0MyiuiN6aje0r44YSW44f8vJHhhJbjh_y8kYWkxeLrPwyv7aVzzWDOWJvdd4I2088B6zbGD1Ow2uYs&_nc_ohc=5piHcHK2uh8Q7kNvwH1BbOo&_nc_oc=AdpRpgont-m8yUFVtXM5GFXFw-RHcR59Mur9hEI903Tm_fSaxdmNGCifu0OLVjL7oy0&_nc_zt=23&_nc_ht=scontent.fdac138-1.fna&_nc_gid=a4Ssg3gfcqoaESp-7pSJxQ&_nc_ss=7a3a8&oh=00_Af15wXHihpy4-wG-e5-e0oKiqHdbvLybralWHFmG3gIQFw&oe=69DDA564" alt="Kartick Sarkar">
+                    </div>
+                </div>
+
+                <h1>Kartick Sarkar</h1>
+                <p class="bio">Vlogger | Influencer</p>
+
+                <div class="links-list">
+                    <a href="https://www.facebook.com/sarkar.kartick.5" class="link-row fb-link" target="_blank">
+                        <span class="link-icon"><i class="fa-brands fa-facebook-f"></i></span>
+                        <b>Facebook</b>
+                    </a>
+
+                    <a href="https://www.youtube.com/@" class="link-row yt-link" target="_blank">
+                        <span class="link-icon"><i class="fa-brands fa-youtube"></i></span>
+                        <b>YouTube</b>
+                    </a>
+
+                    <a href="https://tiktok.com/@" class="link-row tk-link" target="_blank">
+                        <span class="link-icon"><i class="fa-brands fa-tiktok"></i></span>
+                        <b>TikTok</b>
+                    </a>
+
+                    <a href="https://instagram.com/" class="link-row ig-link" target="_blank">
+                        <span class="link-icon"><i class="fa-brands fa-instagram"></i></span>
+                        <b>Instagram</b>
+                    </a>
+
+                    <a href="https://x.com/" class="link-row x-link" target="_blank">
+                        <span class="link-icon"><i class="fa-brands fa-x-twitter"></i></span>
+                        <b>X</b>
+                    </a>
+
+                    <a href="https://www.pinterest.com/parthib_2023" class="link-row pn-link" target="_blank">
+                        <span class="link-icon"><i class="fa-brands fa-pinterest"></i></span>
+                        <b>Pinterest</b>
+                    </a>
+
+                    <a href="https://www.threads.net/@parthib_2023" class="link-row th-link" target="_blank">
+                        <span class="link-icon"><i class="fa-brands fa-threads"></i></span>
+                        <b>Threads</b>
+                    </a>
+                </div>
+
+                <div class="footer-copyright">
+                    &copy; 2026 Kartick | All rights reserved.
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
